@@ -1,0 +1,9 @@
+<% layout('./layouts/boilerplate') %>
+<body>
+    <form action="/listing/check" method="post">
+        <label for="titleName">Enter the Title</label>
+        <input type="text" name="titleName" id="titleName" placeholder="Enter Title" value="<%=data.titleName %>">
+        <button type="submit">Check</button>
+    </form>
+    <p><%= data.probability %></p>
+</body>

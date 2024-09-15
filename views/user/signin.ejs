@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <%= message %>
+    <%= error %>
+    <form action="/signin" method="post">
+        <label for="username">Enter UserName</label><br>
+        <input type="text" name="username" id="username" placeholder="Enter UserName"><br>
+        <label for="password">Enter Password</label><br>
+        <input type="password" name="password" id="password" placeholder="Enter Password"><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>
