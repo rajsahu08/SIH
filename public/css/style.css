@@ -1,8 +1,180 @@
-body{
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Montserrat", system-ui;
+}
+.nav {
+    height: 6rem;
+    /* background-color: pink; */
+    display: flex;
+    justify-content: space-between;
+    margin-left: 3%;
+    margin-right: 2%;
+    /* position: sticky;
+    top: 0;
+    background-color: white; */
+}
+.nav-left {
+    height: 6rem;
+    width: 6rem;
+}
+.logo {
+    width: 100%;
+}
+.nav-right{
+    width: 55%;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    /* background-color: yellow; */
     
 }
+.nav-right li {
+    list-style: none;
+    font-size: 1.1rem;
+    color: #004D99;
+    cursor: pointer;
+    position: relative;
+    transition: color 0.75s ease;
+}
 
-.card{
-    border: 2px solid black;
-    margin: 10px;
+.nav-right li::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 0;
+    height: 2px;
+    background-color: #004D99;
+    transition: width 0.5s ease;
+}
+
+.nav-right li:hover {
+    color: #004D99;
+}
+
+.nav-right li:hover::after {
+    width: 100%;
+}
+
+.nav-right a {
+    padding: 0.75rem 1.25rem;
+    font-size: 1.1rem;
+    border-radius: 1.5rem;
+    border: 2.2px solid blue;
+    color: #004D99;
+    background-color: white;
+    cursor: pointer;
+    text-decoration: none;
+}
+.nav-right a:hover {
+    background-color: #004D99;
+    color: white;
+}
+.nav-bottom{
+    height: 1.5rem;
+    background-color:#004D99;
+}
+
+
+.get-started {
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(/get-started.jpg);
+    height: 60vh;
+    background-size: cover;
+    background-position: center;
+    background-blend-mode:darken;
+}
+.h-get-started {
+    margin-left: 6%;
+    padding-top: 6%;
+    margin-bottom: 3%;
+    font-size: 3.75rem;
+    color: rgb(255, 255, 255);
+}
+.btn-get-started {
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1.25rem;
+    /* border: 2px solid #004D99; */
+    border: 2px solid green;
+    color: white;
+    background-color: green;
+    margin-left: 6%;
+    cursor: pointer;
+    text-decoration: none;
+}
+.btn-get-started:hover {
+    border: 2px solid white;
+}
+
+/* Title verify Page */
+.title-verify {
+    display: flex;
+    justify-content: center;
+    margin-top: 5%;
+}
+.title-input {
+    width: 45%;
+    height: 1rem;
+    padding: 1.25rem;
+    font-size: 1.25rem;
+    margin-left: 2rem;
+    border-radius: 1rem;
+    border: 3px solid grey;
+}
+.title-input:hover {
+    box-shadow: 0 0 3px green;
+}
+.title-btn {
+    padding: 0.9rem 2rem;
+    font-size: 1.2rem;
+    border-radius: 1rem;
+    border: 2px solid white;
+    color: white;
+    background-color: green;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+.title-btn:hover {
+    box-shadow: 0 0 3px green;
+}
+
+.probablity {
+    font-size: 2rem;
+    text-align: center;
+    margin-top: 4rem;
+    margin-bottom: 3rem;
+    font-weight: 500;
+    border-radius: 2rem;
+}
+.percent {
+    font-weight: 700;
+    color: #004D99;
+    padding: 0.5rem;
+}
+.reject {
+    text-align: center;
+    font-size: 2rem;
+    margin-right: 2rem;
+    color: red;
+    font-weight: 700;
+}
+.reject i {
+    width: 2rem;
+    height: 2rem;
+    font-size: 2rem;
+    border-radius:50%;
+    border: 2px solid red;
+    color: white;
+    background-color: red;
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.reject-reason {
+    font-size: 1.5rem;
+    text-align: center;
+    margin-top: 2rem;
+    color: green;
 }
