@@ -2,7 +2,9 @@ const mongoose = require('mongoose');
 const initData = require('./data.js');
 const db = require('../models/db.js');
 
-const MONGO_URL = 'mongodb+srv://rajsahu0702:4uRqIykvud1vdX5e@db.fjvcb.mongodb.net/';
+const MONGO_URL = 'mongodb://localhost:27017/SIH';
+
+app.use(express.static('public'));  // Serve static files from the 'public' directory
 
 main().then(()=>{
     console.log("connected to DB");
